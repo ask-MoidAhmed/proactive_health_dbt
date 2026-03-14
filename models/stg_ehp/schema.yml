@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_ehp__patn
+    columns:
+      - name: pat_id
+        tests:
+          - not_null
+          - unique
+  - name: stg_ehp__vist
+    columns:
+      - name: visit_refr
+        tests:
+          - not_null
+          - unique
