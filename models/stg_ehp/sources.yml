@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: raw_ehp
+    database: PROACTIVE_HEALTH
+    schema: RAW_EHP
+    tables:
+      - name: RAW_EHP__PATN
+      - name: RAW_EHP__VIST
+      - name: RAW_EHP__BILL
+      - name: RAW_EHP__DIAG
+      - name: RAW_EHP__DPMT
+      - name: RAW_EHP__STFF
+      - name: RAW_EHP__APPT
+      - name: RAW_EHP__TRTM
+      - name: RAW_EHP__MDCN
+      - name: RAW_EHP__INSR
+      - name: RAW_EHP__PMNT
+      - name: RAW_EHP__ROMS
+      - name: RAW_EHP__EQPM
+      - name: RAW_EHP__SPLY
+      - name: RAW_EHP__INVN
+      - name: RAW_EHP__PTAL
+      - name: RAW_EHP__VNDR
+      - name: RAW_EHP__VPMT
+      - name: RAW_EHP__MDBL
+      - name: RAW_EHP__ALGY
+      - name: RAW_EHP__MEDT
+      - name: RAW_EHP__TMMD
