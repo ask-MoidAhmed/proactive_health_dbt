@@ -11,7 +11,7 @@ with
             vist.visit_stat,
             vist.visit_type
         from
-            {{ref('stg_ehp__vist')}} as vist
+            {{source('stg_ehp','stg_ehp__vist')}} as vist
     ),
 
     medical_team as (
@@ -21,9 +21,9 @@ with
             stff.staff_name,
             medt.role_desc
         from
-            {{ref('stg_ehp__medt')}} as medt
+            {{source('stg_ehp','stg_ehp__medt')}} as medt
         left join
-            {{ref('stg_ehp__stff')}} as stff
+            {{source('stg_ehp','stg_ehp__stff')}} as stff
             on
                 stff.staff_id = medt.staff_id
     ),
@@ -52,7 +52,7 @@ with
         from
             visitation_log as vlog
         left join
-            {{ref('stg_ehp__patn')}} as patn
+            {{source('stg_ehp','stg_ehp__patn')}} as patn
             on
                 patn.pat_id = vlog.pat_id
         left join
