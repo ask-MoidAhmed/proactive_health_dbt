@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: stg_ehp
+    database: PROACTIVE_HEALTH
+    schema: STG_EHP
+    tables:
+      - name: stg_ehp__patn
+      - name: stg_ehp__vist
+      - name: stg_ehp__medt
+      - name: stg_ehp__stff
